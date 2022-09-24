@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac86edc715ed7744aee368229a2b6d0, type: 3}
   m_Name: Queso
   m_EditorClassIdentifier: 
-  name: Queso
+  nombre: 
   _sprite: {fileID: -1253778198, guid: 761eab58a4908774ab7c8e17f1e2f94c, type: 3}
   cantidad: 0
+  costo: 5
