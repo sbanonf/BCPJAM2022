@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class TimeManager : MonoBehaviour
     public bool sepuede = false;
 
     public GameManager _gameManager;
+    public TextMeshProUGUI timer;
 
     private void OnEnable()
     {
@@ -32,7 +34,9 @@ public class TimeManager : MonoBehaviour
     }
 
     public void Timer() {
-       if (sepuede == true)
+        timer = GameObject.FindGameObjectWithTag("TimerText").GetComponent<TextMeshProUGUI>();
+        timer.text = TiempoTurno.ToString("f0");
+        if (sepuede == true)
         {
             if (stage < maxstage)
             {

@@ -4,14 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DragParent
-  - MoneyManager
-  - CuyManager
-  - GameManager
-  - Dinero
-  - StoreManager
   - Insumo
+<<<<<<< Updated upstream
+=======
   - Mes
+  - InsumosText
+  - TimerText
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -46,9 +45,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: UI
-    uniqueID: 2294085783
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
