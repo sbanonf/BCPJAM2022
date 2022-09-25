@@ -41,8 +41,10 @@ public class MoneyManager : MonoBehaviour
     }
 
     public void SetearTexto() {
-        TextMeshProUGUI dinero = GameObject.FindGameObjectWithTag("Dinero").GetComponent<TextMeshProUGUI>();
-        dinero.text = "S/ " + money.ToString();
+
+            TextMeshProUGUI dinero = GameObject.FindGameObjectWithTag("Dinero").GetComponent<TextMeshProUGUI>();
+            dinero.text = "S/ " + money.ToString();
+
     }
 
 

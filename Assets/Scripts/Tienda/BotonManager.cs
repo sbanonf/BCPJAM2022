@@ -12,7 +12,7 @@ public class BotonManager : MonoBehaviour
     private void Awake()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        if (text.text == "Ir a por Materiales" ||   text.text== "Materiales")
+        if (text.text == "Ir Por Materiales" ||   text.text== "Materiales")
         {
             boton.onClick.AddListener(gameManager.ChangeMateriales);
         }
