@@ -549,6 +549,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptable:
   - {fileID: 11400000, guid: 4f1999ca0e2e0a249bedf40d58b53fee, type: 2}
+  - {fileID: 11400000, guid: a2ff0375967b5324caa7846c5a168e04, type: 2}
+  - {fileID: 11400000, guid: b09124c96ef01cc47a855908855ede3e, type: 2}
+  - {fileID: 11400000, guid: e41f2359932615749a803a4876452102, type: 2}
   baseGO: {fileID: 909814471430305650, guid: e2f958d186495964abc8dc20ac87e826, type: 3}
   spawnRate: 0.5
   speed: -5
@@ -628,7 +631,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aeff3502f036d3544a1855a24393f16f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf052b4f2fba3e04eab362e5dcbbc854, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

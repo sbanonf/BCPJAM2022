@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ac86edc715ed7744aee368229a2b6d0, type: 3}
-  m_Name: Queso
+  m_Name: Alfalfa
   m_EditorClassIdentifier: 
-  nombre: Pimiento
-  _sprite: {fileID: 21300000, guid: 410a6ed68e0e81347b52344e3a8c4c96, type: 3}
-  cantidad: 4
+  nombre: Alfalfa
+  _sprite: {fileID: 21300000, guid: 08698a2c2d7156a438d5976d76be0541, type: 3}
+  cantidad: 1
+  costo: 3
