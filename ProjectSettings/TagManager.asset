@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Insumo
+<<<<<<< Updated upstream
+=======
+  - Mes
+  - InsumosText
+  - TimerText
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
