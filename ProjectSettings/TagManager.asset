@@ -10,6 +10,8 @@ TagManager:
   - GameManager
   - Dinero
   - StoreManager
+  - Insumo
+  - Mes
   layers:
   - Default
   - TransparentFX
@@ -44,6 +46,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 2294085783
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

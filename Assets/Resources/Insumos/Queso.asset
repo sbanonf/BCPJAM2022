@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Pimiento
   _sprite: {fileID: 21300000, guid: 410a6ed68e0e81347b52344e3a8c4c96, type: 3}
-  cantidad: 14
-  costo: 6
+  cantidad: 8
+  costo: 4

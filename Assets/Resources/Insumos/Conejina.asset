@@ -15,4 +15,4 @@ MonoBehaviour:
   nombre: Conejina
   _sprite: {fileID: 21300000, guid: c967f2d11da5b5f4abfd48977777bdbe, type: 3}
   cantidad: 0
-  costo: 5
+  costo: 10

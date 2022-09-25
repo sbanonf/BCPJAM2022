@@ -15,4 +15,4 @@ MonoBehaviour:
   nombre: Zanahoria
   _sprite: {fileID: 21300000, guid: f37dc501b400e4a4ca77c347fc979f30, type: 3}
   cantidad: 0
-  costo: 7
+  costo: 3

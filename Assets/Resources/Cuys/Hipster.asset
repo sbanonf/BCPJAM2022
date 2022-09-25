@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad600370ea11204e8c0f2396dfb32b2, type: 3}
   m_Name: Hipster
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 21300000, guid: 0c85f8cb9e450b4409ad1e01e23f657a, type: 3}
-  cantidad: 4
-  precio: 132
-  tiempolimite: 4
+  _sprite: {fileID: 21300000, guid: de5b4bd6e2814b04ea9ae8afa666a629, type: 3}
+  cantidad: 3
+  precio: 24
+  tiempolimite: 5

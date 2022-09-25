@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BotonManager : MonoBehaviour
 {
@@ -12,13 +13,20 @@ public class BotonManager : MonoBehaviour
     private void Awake()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        if (text.text == "Ir Por Materiales" ||   text.text== "Materiales")
+        if (text.text == "Ir Por Materiales" || text.text == "Materiales")
         {
             boton.onClick.AddListener(gameManager.ChangeMateriales);
         }
-        else if(text.text == "Atender la Tienda") {
+        else if (text.text == "Atender la Tienda")
+        {
             boton.onClick.AddListener(gameManager.ChangeTienda);
         }
+
     }
-    
+    public void Empezar() {
+        SceneManager.LoadScene("eleccion");
+    }
+    public void Reiniciar() {
+        SceneManager.LoadScene("Inicio");
+    }
 }

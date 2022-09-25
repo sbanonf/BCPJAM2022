@@ -9,11 +9,11 @@ public class StoreManager : MonoBehaviour
     public int inventariomax;
     public int _c;
 
-    private void OnEnable()
+    private void OnLevelWasLoaded()
     {
         var loadInsumos = Resources.LoadAll("Insumos", typeof(ScriptableIns));
         foreach (ScriptableIns ins in loadInsumos) {
-
+            Debug.Log(_c);
                 for (int i = 0; i < ins.cantidad; i++)
                 {
                     if (_c < inventariomax) {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad600370ea11204e8c0f2396dfb32b2, type: 3}
   m_Name: Rubia
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 21300000, guid: 0c85f8cb9e450b4409ad1e01e23f657a, type: 3}
+  _sprite: {fileID: 21300000, guid: 385f84d76d5590c4fab74a655d3bfee2, type: 3}
   cantidad: 2
-  precio: 123
+  precio: 16
   tiempolimite: 3

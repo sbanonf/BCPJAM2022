@@ -15,4 +15,4 @@ MonoBehaviour:
   nombre: Alfalfa
   _sprite: {fileID: 21300000, guid: 08698a2c2d7156a438d5976d76be0541, type: 3}
   cantidad: 0
-  costo: 4
+  costo: 6

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: "Ni\xF1o"
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: afc8fdd3b0a3dd94db32dac8583ab427, type: 3}
-  cantidad: 3
-  precio: 250
-  tiempolimite: 7
+  cantidad: 5
+  precio: 40
+  tiempolimite: 6
