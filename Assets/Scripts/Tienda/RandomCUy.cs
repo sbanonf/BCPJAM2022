@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RandomCUy : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class RandomCUy : MonoBehaviour
     List<ScriptableIns> Insumos = new List<ScriptableIns>();
 
     private ScriptableIns[] _si;
-    private void Awake()
+    private void OnEnable()
     {
         var loadInsumos = Resources.LoadAll("Insumos", typeof(ScriptableIns));
         foreach(var insumo in loadInsumos){
@@ -21,6 +22,7 @@ public class RandomCUy : MonoBehaviour
         foreach(var cuys in loadCuys){
             Cuyes.Add((ScriptableCuy)cuys);
         }
+
     }
     private void Start()
     {

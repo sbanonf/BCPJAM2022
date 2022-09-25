@@ -7,6 +7,9 @@ TagManager:
   - DragParent
   - MoneyManager
   - CuyManager
+  - GameManager
+  - Dinero
+  - StoreManager
   layers:
   - Default
   - TransparentFX

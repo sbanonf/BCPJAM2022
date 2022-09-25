@@ -9,16 +9,23 @@ using TMPro;
 public class Slot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public StoreManager StoreManager;
     public TextMeshProUGUI _cantidad;
     public GameObject cuy;
     public MoneyManager _moneyManager;
     public RandomCUy _CuyManager;
     int precio;
+    private void OnEnable()
+    {
+        MoneyManager.instance.SetearTexto();
+        TimeManager.instance.sepuede = true;
+    }
     private void Start()
     {
         precio = cuy.GetComponent<BuyerCuy>().cuy.precio;
         _moneyManager = GameObject.FindGameObjectWithTag("MoneyManager").GetComponent<MoneyManager>();
         _CuyManager = GameObject.FindGameObjectWithTag("CuyManager").GetComponent<RandomCUy>();
+        StoreManager = GameObject.FindGameObjectWithTag("StoreManager").GetComponent<StoreManager>();
     }
     public void OnDrop(PointerEventData eventData)
     {
@@ -47,6 +54,7 @@ public class Slot : MonoBehaviour, IDropHandler
             temp3--;
             _cantidad.text = temp3.ToString();
             cuy.GetComponent<BuyerCuy>().insumo.cantidad--;
+            StoreManager._c--;
         }
 
 

@@ -6,19 +6,28 @@ using TMPro;
 public class MoneyManager : MonoBehaviour
 {
     public GameObject timeManager;
+    public static MoneyManager instance;
     public int money = 100;
     bool perdio = false;
-    public TextMeshProUGUI dinero;
 
     private void Awake()
     {
-        SetearTexto();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        } 
     }
     private void Update()
     {
         if (money < 0) { //Verificar Stage.
             perdio = true;
         }
+        SetearTexto();
     }
     public void AddMoney(int a) {
         money += a;
@@ -31,7 +40,8 @@ public class MoneyManager : MonoBehaviour
 
     }
 
-    void SetearTexto() {
+    public void SetearTexto() {
+        TextMeshProUGUI dinero = GameObject.FindGameObjectWithTag("Dinero").GetComponent<TextMeshProUGUI>();
         dinero.text = "S/ " + money.ToString();
     }
 

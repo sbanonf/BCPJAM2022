@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Alfalfa
   m_EditorClassIdentifier: 
   nombre: Alfalfa
-  _sprite: {fileID: 1512110790, guid: 761eab58a4908774ab7c8e17f1e2f94c, type: 3}
-  cantidad: 8
+  _sprite: {fileID: 21300000, guid: 08698a2c2d7156a438d5976d76be0541, type: 3}
+  cantidad: 1

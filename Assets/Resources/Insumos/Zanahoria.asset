@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ac86edc715ed7744aee368229a2b6d0, type: 3}
-  m_Name: Queso
+  m_Name: Zanahoria
   m_EditorClassIdentifier: 
-  nombre: Pimiento
-  _sprite: {fileID: 21300000, guid: 410a6ed68e0e81347b52344e3a8c4c96, type: 3}
-  cantidad: 4
+  nombre: Zanahoria
+  _sprite: {fileID: 21300000, guid: f37dc501b400e4a4ca77c347fc979f30, type: 3}
+  cantidad: 0

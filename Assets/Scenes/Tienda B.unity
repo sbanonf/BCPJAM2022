@@ -1221,6 +1221,7 @@ MonoBehaviour:
   _cantidad: {fileID: 5211267378786784095}
   cuy: {fileID: 5211267380378261878}
   _moneyManager: {fileID: 832979163}
+  _CuyManager: {fileID: 0}
 --- !u!224 &5211267379151797932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1402,6 +1403,7 @@ MonoBehaviour:
   Tiempolimite: 0
   _slider: {fileID: 5211267380057160241}
   cuypadre: {fileID: 5211267380378261878}
+  cm: {fileID: 0}
 --- !u!224 &5211267380057160243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1556,7 +1558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.499985, y: -135.3}
+  m_AnchoredPosition: {x: 31.9, y: -156.4}
   m_SizeDelta: {x: 193.1469, y: 72.9058}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5211267380192048844
@@ -1699,7 +1701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -934361668, guid: 761eab58a4908774ab7c8e17f1e2f94c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf052b4f2fba3e04eab362e5dcbbc854, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1730,7 +1732,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 125, y: 203.1177}
+  m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5211267380378261878
 GameObject:

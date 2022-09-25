@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad600370ea11204e8c0f2396dfb32b2, type: 3}
   m_Name: "Ni\xF1o"
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 493613637, guid: 761eab58a4908774ab7c8e17f1e2f94c, type: 3}
+  _sprite: {fileID: 21300000, guid: afc8fdd3b0a3dd94db32dac8583ab427, type: 3}
   cantidad: 3
   precio: 250
   tiempolimite: 7

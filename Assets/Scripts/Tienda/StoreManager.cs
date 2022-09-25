@@ -9,7 +9,7 @@ public class StoreManager : MonoBehaviour
     public int inventariomax;
     public int _c;
 
-    private void Awake()
+    private void OnEnable()
     {
         var loadInsumos = Resources.LoadAll("Insumos", typeof(ScriptableIns));
         foreach (ScriptableIns ins in loadInsumos) {
