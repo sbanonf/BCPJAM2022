@@ -35,7 +35,7 @@ public class TimeManager : MonoBehaviour
 
     public void Timer() {
         timer = GameObject.FindGameObjectWithTag("TimerText").GetComponent<TextMeshProUGUI>();
-        timer.text = TiempoTurno.ToString("f0");
+        timer.text = TiempoTurno.ToString("f0"); 
         if (sepuede == true)
         {
             if (stage < maxstage)
