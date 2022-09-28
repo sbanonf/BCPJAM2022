@@ -50,7 +50,8 @@ public class spawnObjects : MonoBehaviour
 
     void GetProperties()
     {
-        baseGO.GetComponent<SpriteRenderer>().sprite = scriptable[0]._sprite;
-        baseGO.GetComponent<InsumoData>().insumo = scriptable[0];
+        int rand = Random.Range(0, scriptable.Length );
+        baseGO.GetComponent<SpriteRenderer>().sprite = scriptable[rand]._sprite;
+        baseGO.GetComponent<InsumoData>().insumo = scriptable[rand];
     }
 }

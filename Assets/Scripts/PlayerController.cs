@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
 
     public bool facingRigth = true;
+    public Joystick _joystick;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+        //moveInput = _joystick.Horizontal;
 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         if (facingRigth == false && moveInput > 0)

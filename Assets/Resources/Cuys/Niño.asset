@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: afc8fdd3b0a3dd94db32dac8583ab427, type: 3}
   cantidad: 5
-  precio: 40
-  tiempolimite: 6
+  precio: 150
+  tiempolimite: 8

@@ -12,6 +12,8 @@ TagManager:
   - StoreManager
   - Insumo
   - Mes
+  - TimerText
+  - IsumosText
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public GameState state;
     public static event Action<GameState> OnGameStateChanged;
-    public int _mes = 0;
+    public int _mes = 1;
 
     private void Awake()
     {
