@@ -34,9 +34,12 @@ public class Slot : MonoBehaviour, IDropHandler
             item = Drag_Drop.itemDragging;
             string temp1 = item.GetComponent<Ins>().nombre.text;
             string temp2 = cuy.GetComponent<BuyerCuy>().insumo.nombre;
+           
             if (temp1.Equals(temp2)) {
-                Destroy(item);
-                DisminuirCantidad();
+                Debug.Log(int.Parse(item.GetComponent<Ins>().cantidad.text));
+                if (cuy.GetComponent<BuyerCuy>().insumo.cantidad > 0) { 
+                     DisminuirCantidad();
+                }
             }
         }
     }
@@ -54,7 +57,7 @@ public class Slot : MonoBehaviour, IDropHandler
             temp3--;
             _cantidad.text = temp3.ToString();
             cuy.GetComponent<BuyerCuy>().insumo.cantidad--;
-            StoreManager._c--;
+            StoreManager.instance.SetearTextos();
         }
 
 

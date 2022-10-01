@@ -63,15 +63,22 @@ public class MejoraManager : MonoBehaviour
             MoneyManager.instance.PayMoney(m[0]);
             MoneyManager.instance.PayMoney(m[2]);
         }
-        if (MoneyManager.instance.money >= 0)
+        if (MoneyManager.instance.total >= 0)
         {
             TimeManager.instance.stage = 0;
             GameManager.Instance._mes++;
             GameManager.Instance.UpdateGameState(GameState.eleccion);
         }
         else if(MoneyManager.instance.money <0) {
-            MoneyManager.instance.money = 100;
+            MoneyManager.instance.money = 200;
+            MoneyManager.instance.gasto = 0.50 * MoneyManager.instance.money;
             TimeManager.instance.stage = 0;
+            var loadInsumos = Resources.LoadAll("Insumos", typeof(ScriptableIns));
+            foreach (ScriptableIns ins in loadInsumos)
+            {
+                ins.cantidad = 0;
+            }
+
             GameManager.Instance.UpdateGameState(GameState.perder);                   
         }
     }

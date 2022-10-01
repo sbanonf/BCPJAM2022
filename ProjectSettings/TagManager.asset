@@ -14,6 +14,9 @@ TagManager:
   - Mes
   - TimerText
   - IsumosText
+  - AhorroIg
+  - GastoIg
+  - Peligro
   layers:
   - Default
   - TransparentFX

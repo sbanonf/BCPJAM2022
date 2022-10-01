@@ -10,6 +10,8 @@ public class ItemManager : MonoBehaviour
 {
     public static ItemManager itemManagerInstance;
     public ScriptableIns[] scriptableIns;
+    public TextMeshProUGUI[] textos;
+    public Image[] images;
 
     private void Awake()
     {
@@ -19,9 +21,13 @@ public class ItemManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        
     }
 
+    private void OnLevelWasLoaded()
+    {
+        SetearTexto();
+    }
     private void Update()
     {
         SetearTexto();
@@ -38,12 +44,20 @@ public class ItemManager : MonoBehaviour
 
     public void SetearTexto()
     {
-        amounts = GameObject.FindGameObjectWithTag("IsumosText").GetComponent<TextMeshProUGUI>();
-        amounts.text = "";
-        for (int i = 0; i < scriptableIns.Length; i++)
+        int texttemp0 = 0;
+        var loadInsumos = Resources.LoadAll("Insumos", typeof(ScriptableIns));
+        foreach (ScriptableIns ins in loadInsumos)
         {
-            amounts.text = amounts.text + "   " + scriptableIns[i].nombre + "|" + scriptableIns[i].cantidad;
+            textos[texttemp0].text = ins.cantidad.ToString();
+            images[texttemp0].sprite = ins._sprite;
+            texttemp0++;
         }
+
+        /* for (int i = 0; i < scriptableIns.Length; i++)
+         {
+             images[i].sprite = scriptableIns[i]._sprite;
+             textos[i].text = scriptableIns[i].cantidad.ToString();
+         }*/
     }
 
 }

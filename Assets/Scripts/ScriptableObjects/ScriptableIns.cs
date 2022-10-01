@@ -8,5 +8,5 @@ public class ScriptableIns : ScriptableObject
     public string nombre;
     public Sprite _sprite;
     public int cantidad;
-    public int costo;
+    public int costo;    
 }
