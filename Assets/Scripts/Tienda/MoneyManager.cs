@@ -89,16 +89,15 @@ public class MoneyManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "minijuego")
         {
-            GameObject peligro = GameObject.FindGameObjectWithTag("Peligro");
             GameObject gastos = GameObject.FindGameObjectWithTag("GastoIg");
+            Debug.Log(gastos);
             if (gasto >= 0) {
-                gastos.GetComponent<Image>().sprite = gastoim;
                 gastos.SetActive(true);
+                gastos.GetComponent<Image>().sprite = gastoim;
                 dinero.text = "S/" + gasto.ToString();
             }
             if (gasto <0) {
-                peligro.GetComponent<Image>().sprite = peligros;
-                peligro.SetActive(true);
+                gastos.GetComponent<Image>().sprite = peligros;
                 dinero.color = Color.red;
                 dinero.text = "S/" + money.ToString();
             }
@@ -111,10 +110,7 @@ public class MoneyManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Mejorar") {
             dinero.text = "S/" + total.ToString();        
-        }
-
-            
-
+        }          
     }
 
 

@@ -13,7 +13,9 @@ public class Canasta : MonoBehaviour
             InsumoData insumoData = collision.gameObject.GetComponent<InsumoData>();
             ItemManager.itemManagerInstance.showValue(insumoData, transform);
             Destroy(collision.gameObject);
+            AudioManager.instance.Play("objeto");
             insumoData.insumo.cantidad++;
+            InventarioManager.instance.AñadirIngreso();
             MoneyManager.instance.PayMoney(insumoData.insumo.costo);
         }
     }

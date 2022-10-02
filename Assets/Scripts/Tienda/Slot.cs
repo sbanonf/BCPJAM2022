@@ -54,10 +54,14 @@ public class Slot : MonoBehaviour, IDropHandler
         int temp3 = int.Parse(_cantidad.text);
         if (temp3 > 0)
         {
-            temp3--;
-            _cantidad.text = temp3.ToString();
-            cuy.GetComponent<BuyerCuy>().insumo.cantidad--;
-            StoreManager.instance.SetearTextos();
+            if ( cuy.GetComponent<BuyerCuy>().insumo.cantidad - cuy.GetComponent<BuyerCuy>().cuy.cantidad >= 0) {
+                temp3 = temp3 - cuy.GetComponent<BuyerCuy>().cuy.cantidad;
+                _cantidad.text = temp3.ToString();
+                cuy.GetComponent<BuyerCuy>().insumo.cantidad = cuy.GetComponent<BuyerCuy>().insumo.cantidad - cuy.GetComponent<BuyerCuy>().cuy.cantidad;
+                AudioManager.instance.Play("objeto");
+                InventarioManager.instance.AñadirEgreso();
+                StoreManager.instance.SetearTextos();
+            }
         }
 
 

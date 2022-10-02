@@ -24,12 +24,19 @@ public class BotonManager : MonoBehaviour
 
     }
     public void Empezar() {
+        AudioManager.instance.Play("click");
         SceneManager.LoadScene("eleccion");
     }
     public void Reiniciar() {
+        AudioManager.instance.Play("click");
         SceneManager.LoadScene("Inicio");
     }
     public void Creditos() {
+        AudioManager.instance.Play("click");
         SceneManager.LoadScene("Creditos");
+    }
+    public void Tutorial() {
+        AudioManager.instance.Play("click");
+        SceneManager.LoadScene("Tutorial");
     }
 }

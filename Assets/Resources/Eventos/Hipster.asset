@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7202f3d35cff546a95feb15ec6f707, type: 3}
+  m_Name: Hipster
+  m_EditorClassIdentifier: 
+  texto: "\xA1Hola! Tendr\xE1s por casualidad pimientos \xF3rganicos, he o\xEDdo
+    que dejan tu pelaje brillante. Si no, lo tienes, no importa, dame todos los que
+    tienes y te dare 100 cuycoins"
+  sprite: {fileID: 21300000, guid: e4abc82defa659642b249f0253af5e71, type: 3}
+  boton1: Si tengo
+  boton2: No tengo
