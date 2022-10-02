@@ -17,6 +17,7 @@ TagManager:
   - AhorroIg
   - GastoIg
   - Peligro
+  - Hormiga
   layers:
   - Default
   - TransparentFX

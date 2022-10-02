@@ -34,10 +34,16 @@ public class ItemManager : MonoBehaviour
     }
 
     public GameObject floatingText;
+    public GameObject floatingTextRed;
     public void showValue(InsumoData insumoData, Transform transformCanasta)
     {
         var t = Instantiate(floatingText, transformCanasta.position, Quaternion.identity);
         t.GetComponent<TextMeshPro>().text = "-/s." + insumoData.insumo.costo;
+    }
+    public void showValue(int costo, Transform transformCanasta)
+    {
+        var t = Instantiate(floatingTextRed, transformCanasta.position, Quaternion.identity);
+        t.GetComponent<TextMeshPro>().text = "-/s." + costo;
     }
 
     public TextMeshProUGUI amounts;

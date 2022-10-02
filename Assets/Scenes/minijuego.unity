@@ -168,6 +168,7 @@ MonoBehaviour:
   - {fileID: 827297722}
   - {fileID: 826150021}
   floatingText: {fileID: 4938487016003536806, guid: 361d115d133afd24a9fceb2253ef1a9d, type: 3}
+  floatingTextRed: {fileID: 7194971431440690244, guid: 6600b13ecb4d4794ba306332064ba112, type: 3}
   amounts: {fileID: 0}
 --- !u!4 &20442844
 Transform:
@@ -1623,6 +1624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577434366}
   - component: {fileID: 1577434365}
+  - component: {fileID: 1577434367}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1666,6 +1668,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577434367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577434364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf21b4a056ac9e4b82ae7aac24c60b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseGO: {fileID: 15167699689657539, guid: 5c6439cb938142340830426eeb41768f, type: 3}
+  spawnRate: 3
+  speed: -6
 --- !u!1001 &1688959118
 PrefabInstance:
   m_ObjectHideFlags: 0

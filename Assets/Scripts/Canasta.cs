@@ -18,5 +18,12 @@ public class Canasta : MonoBehaviour
             InventarioManager.instance.AñadirIngreso();
             MoneyManager.instance.PayMoney(insumoData.insumo.costo);
         }
+        if (collision.tag == "Hormiga")
+        {
+            Destroy(collision.gameObject);
+            ItemManager.itemManagerInstance.showValue(-5, transform);
+            AudioManager.instance.Play("objeto");
+            MoneyManager.instance.PayMoney(-5);
+        }
     }
 }
